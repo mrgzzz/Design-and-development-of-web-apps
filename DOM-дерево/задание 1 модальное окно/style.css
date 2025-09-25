@@ -1,0 +1,86 @@
+body {
+    background-color: #fff5b3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+.main {
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    align-items: center;
+}
+#openModalBtn {
+    width: 210px;
+    height: 100px;
+    font-size: 38px;
+    background-color: rgb(183, 235, 93);
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 700px;
+    font-size: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.7);
+    transition: transform 0.3s;
+}
+.modal.active .modal-content {
+    transform: scale(1);
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.modal-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #777;
+}
+.close-btn:hover {
+    color: #333;
+}
+.modal-body {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}

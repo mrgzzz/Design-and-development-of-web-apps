@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery1">
+            <img src="https://i.pinimg.com/736x/cf/74/68/cf7468d7dddd5226df51b4648e9b875a.jpg" onclick="openModal();currentSlide(1)" alt="Фотографии">
+            <img src="https://i.pinimg.com/736x/64/99/1d/64991d8c3f1900a5623943eee63ac856.jpg" onclick="openModal();currentSlide(2)" alt="Визитка">
+            <img src="https://i.pinimg.com/736x/a4/bb/65/a4bb65c07ca46e8e0ac1aaaf551adea5.jpg" onclick="openModal();currentSlide(3)" alt="Toro-Cat">
+        </div>
+        <div class="gallery1">
+            <img src="https://i.pinimg.com/originals/07/92/7b/07927b9235673c7e96d75488dc6652c0.gif" onclick="openModal();currentSlide(4)" alt="?">
+            <img src="https://i.pinimg.com/736x/90/35/0c/90350c1c8796ff5d265bc612411a454b.jpg" onclick="openModal();currentSlide(5)" alt="Хомячки">
+            <img src="https://i.pinimg.com/originals/84/54/79/845479e9094ae490bdd68604405dcc28.gif" onclick="openModal();currentSlide(6)" alt="Стиль">
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="https://i.pinimg.com/736x/cf/74/68/cf7468d7dddd5226df51b4648e9b875a.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="https://i.pinimg.com/736x/64/99/1d/64991d8c3f1900a5623943eee63ac856.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="https://i.pinimg.com/736x/a4/bb/65/a4bb65c07ca46e8e0ac1aaaf551adea5.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="https://i.pinimg.com/originals/07/92/7b/07927b9235673c7e96d75488dc6652c0.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="https://i.pinimg.com/736x/90/35/0c/90350c1c8796ff5d265bc612411a454b.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="https://i.pinimg.com/originals/84/54/79/845479e9094ae490bdd68604405dcc28.gif" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
