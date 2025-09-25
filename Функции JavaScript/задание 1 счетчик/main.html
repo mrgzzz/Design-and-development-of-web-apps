@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счетчик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Счетчик</h1>
+        <div class="counter" id="counterValue">0</div>
+        
+        <div class="buttons">
+            <button class="decrement-btn" onclick="decrementCounter()">-1</button>
+            <button class="reset-btn" onclick="resetCounter()">Сброс</button>
+            <button class="increment-btn" onclick="incrementCounter()">+1</button>
+        </div>
+        
+        <div class="history">
+            <h3>История изменений:</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
